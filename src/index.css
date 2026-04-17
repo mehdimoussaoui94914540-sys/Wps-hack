@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+:root {
+  --bg: #050505;
+  --surface: #121212;
+  --border: #222222;
+  --accent: #00ff41;
+  --text: #e0e0e0;
+  --text-dim: #888888;
+  --cyan: #00e5ff;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  @apply font-sans;
+}
+
+.label-style {
+  @apply text-[10px] uppercase tracking-[2px] font-bold mb-2 block text-[#888888];
+}
+
+.input-style {
+  @apply bg-black border border-[#222222] p-3 rounded font-mono text-[#00ff41] text-lg w-full outline-none focus:border-[#00ff41] transition-colors;
+}
+
+.card-style {
+  @apply bg-[#1a1a1a] border border-[#222222] rounded-lg p-5;
+}
+
+.terminal-line {
+  @apply flex items-start gap-2 mb-1;
+}
+
+.terminal-line span {
+  @apply text-[#00ff41] font-bold;
+}

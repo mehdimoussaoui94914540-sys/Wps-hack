@@ -1,0 +1,6 @@
+{
+  "name": "WPS PIN Generator Pro",
+  "description": "Professional WPS PIN generation tool using reverse-engineered algorithms for wireless security research.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["WPS Security Research", "MAC Analysis"]
+}
